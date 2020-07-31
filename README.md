@@ -1,5 +1,4 @@
-# Template_Repo
-template project structure for NLP research
+# The template code base for a typical NLP research project by Roy
 
 ## Underpinning Libraries
 + [torch](https://pytorch.org/)
