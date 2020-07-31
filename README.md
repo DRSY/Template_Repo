@@ -2,10 +2,10 @@
 template project structure for NLP research
 
 ## Underpinning Libraries
-+ Pytorch
-+ Pytorch-Lightning
-+ transformers
-+ nlp
++ [torch](https://pytorch.org/)
++ [pytorch_lightning](https://github.com/PyTorchLightning/pytorch-lightning)
++ [transformers](https://github.com/huggingface/transformers)
++ [nlp](https://github.com/huggingface/nlp)
 + argparse
 
 ## Folder Structure
