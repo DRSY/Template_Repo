@@ -32,4 +32,5 @@ early_stop_callback = EarlyStopping(
     patience=3,
     verbose=False,
 )
+trainer = Trainer(early_stop_callback=early_stop_callback)
 ```
