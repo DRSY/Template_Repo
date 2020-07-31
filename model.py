@@ -24,13 +24,19 @@ class Model(pl.LightningModule):
         """
         pass
 
-    def training_step(self, *args, **kwargs) -> Union[int, Dict[str, Union[Tensor, Dict[str, Tensor]]]]:
+    def training_step(self, batch, batch_idx) -> Union[int, Dict[str, Union[Tensor, Dict[str, Tensor]]]]:
         pass
 
-    def validation_step(self, *args, **kwargs) -> Dict[str, Tensor]:
+    def validation_step(self, batch, batch_idx) -> Dict[str, Tensor]:
         pass
 
     def validation_epoch_end(self, outputs: Union[List[Dict[str, Tensor]], List[List[Dict[str, Tensor]]]]) -> Dict[str, Dict[str, Tensor]]:
+        pass
+
+    def test_step(self, batch, batch_idx) -> Dict[str, Tensor]:
+        pass
+
+    def test_epoch_end(self, outputs: Union[List[Dict[str, Tensor]], List[List[Dict[str, Tensor]]]]) -> Dict[str, Dict[str, Tensor]]:
         pass
 
     def configure_optimizers(self) -> Optional[Union[Optimizer, Sequence[Optimizer], Dict, Sequence[Dict], Tuple[List, List]]]:

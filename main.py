@@ -15,11 +15,17 @@ def main(args):
     seed_everything(args.seed)
 
     # get train/val/test dataloader
+    # train_loader, val_loader, test_loader = get_data_loader
 
     # get model
+    # model = MainClass(*args)
 
     # init trainer
     trainer = Trainer.from_argparse_args(args)
+
+    # usage
+    # trainer.fit(model, train_loader, val_loader)
+    # trainer.test(model, test_loader)
 
 
 if __name__ == "__main__":
