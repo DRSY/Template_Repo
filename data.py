@@ -2,7 +2,7 @@
     This file contains data preprocessing script
 """
 import torch
-from torch.utils.data import Dataset, RandomSampler, DataLoader, random_split
+from torch.utils.data import Dataset, RandomSampler, DataLoader, random_split, TensorDataset
 import nlp
 
 
