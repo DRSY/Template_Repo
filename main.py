@@ -10,7 +10,15 @@ from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
 
 
+import logging
+logging.basicConfig(format="%(filename)s:%(lineno)d - %(message)s",
+                    datefmt="%m/%d/%Y %H:%M:%S",
+                    level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+
 def main(args):
+    logger.info("Training start")
     # seed all
     seed_everything(args.seed)
 

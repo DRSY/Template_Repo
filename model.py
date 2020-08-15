@@ -5,9 +5,10 @@ import torch.optim as optim
 from torch.optim.lr_scheduler import CosineAnnealingLR
 import pytorch_lightning as pl
 from typing import *
-from torch import Tensor
+from torch import Tensor, log
 
 from .modules import *
+
 
 
 class Model(pl.LightningModule):
