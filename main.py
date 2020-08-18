@@ -1,5 +1,5 @@
-from .config import get_args
-from .data import get_data_loader
+from config import get_args
+from data import get_data_loader
 
 from pprint import pprint
 
@@ -39,4 +39,5 @@ def main(args):
 if __name__ == "__main__":
     args = get_args()
     pprint(vars(args))
-    main(args)
+    # main(args)
+# 
