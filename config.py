@@ -1,6 +1,10 @@
 import argparse
 from pytorch_lightning import Trainer
 from model import Model
+import logging
+logging.basicConfig(level=logging.INFO,
+                    format="%(asctime)s %(filename)s [line:%(lineno)d] %(levelname)s: %(message)s", datefmt="%a, %d %b %Y %H:%M:%S")
+logger = logging.getLogger(__name__)
 
 
 def get_args():

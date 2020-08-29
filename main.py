@@ -1,4 +1,4 @@
-from config import get_args
+from config import get_args, logger
 from data import get_data_loader
 
 from pprint import pprint
@@ -8,13 +8,6 @@ import pytorch_lightning as pl
 from pytorch_lightning import Trainer, seed_everything
 from pytorch_lightning.callbacks import EarlyStopping, ModelCheckpoint
 from pytorch_lightning.loggers import TensorBoardLogger
-
-
-import logging
-logging.basicConfig(format="%(filename)s:%(lineno)d - %(message)s",
-                    datefmt="%m/%d/%Y %H:%M:%S",
-                    level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 
 def main(args):
@@ -30,6 +23,7 @@ def main(args):
 
     # init trainer
     trainer = Trainer.from_argparse_args(args)
+    logger.info("trainer initialized")
 
     # usage
     # trainer.fit(model, train_loader, val_loader)
@@ -40,4 +34,4 @@ if __name__ == "__main__":
     args = get_args()
     pprint(vars(args))
     main(args)
-# 
+#
