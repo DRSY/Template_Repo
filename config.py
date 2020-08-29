@@ -6,7 +6,8 @@ from model import Model
 def get_args():
     parser = argparse.ArgumentParser()
     # args for program meta-data like data_path, etc.
-    # parser.add_argument()
+    parser.add_argument('--seed', type=int, default=42,
+                        help='random seed for reproducibility')
 
     # args for model specific hyper-parameters
     parser = Model.add_model_specific_arguments(parser)

@@ -39,5 +39,5 @@ def main(args):
 if __name__ == "__main__":
     args = get_args()
     pprint(vars(args))
-    # main(args)
+    main(args)
 # 
