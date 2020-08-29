@@ -1,4 +1,4 @@
-# The template code base for a typical NLP research project by Roy
+# The template code base for a typical NLP research project
 
 ## Underpinning Libraries
 + [torch](https://pytorch.org/)
